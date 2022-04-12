@@ -1,0 +1,30 @@
+html 
+    head
+        title Vizitka
+        style 
+            include css/styles.css 
+    body
+        h1 #{nadpis}
+        table 
+            thead
+                tr 
+                    th Jméno
+                    th Příjmení 
+                    th věk 
+                    th Město 
+                    th Škola 
+                    th Obor 
+                    th Ročník 
+                
+            tbody
+                each student in students
+                    tr
+                        td #{student.name}       
+                        td #{student.surname}
+                        td #{student.age}
+                        td #{student.city}
+                        td #{student.school}
+                        td #{student.specializ}
+                        td #{student.year}
+                       
+                        
